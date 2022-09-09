@@ -47,7 +47,6 @@
                                 <input type="date" name="date" id="data_volta">
                             </div>
                         </div>
-                            
                         <div class="ida-volta">
                             <div class="data-ida">
                                 <label>Origem</label>
@@ -64,59 +63,51 @@
                                 </select>
                             </div>
                         </div>
+                        <h3>Quarto com cama infantil?</h3>
+                        <div class="quarto-hospedagem">
+                            <div class="sim-nao">
+                                <input type="radio" name="infantil" id="sim">
+                                <label for="sim">Sim</label>
+                            </div>
+                            <div class="sim-nao">
+                                <input type="radio" name="infantil" id="nao">
+                                <label for="nao">Não</label>
+                            </div>
+                        </div>
+                        <h3>Preferência de hospedagem</h3>
+                        <div class="quarto-hospedagem">
+                            <div class="preferencia-opcoes">
+                                <input type="checkbox" name="opcoes  " id="piscina">
+                                <label for="piscina">Piscina</label>
+                            </div>
                             
-                                
-
-                        <!-- <div class="opcao-quarto-infantil"> -->
-                            <h3>Quarto com cama infantil?</h3>
-                            <div class="quarto-hospedagem">
-                                <div class="sim-nao">
-                                    <input type="radio" name="infantil" id="sim">
-                                    <label for="sim">Sim</label>
-                                </div>
-                                <div class="sim-nao">
-                                    <input type="radio" name="infantil" id="nao">
-                                    <label for="nao">Não</label>
-                                </div>
+                            <div class="preferencia-opcoes">
+                                <input type="checkbox" name="opcoes" id="wifi">
+                                <label for="wifi">Wifi</label>
                             </div>
-
-                        <!-- </div> -->
-
-                        <!-- <div class="opcoes-hospedagem"> -->
-                            <h3>Preferência de hospedagem</h3>
-                            <div class="quarto-hospedagem">
-                                <div class="preferencia-opcoes">
-                                    <input type="checkbox" name="opcoes  " id="piscina">
-                                    <label for="piscina">Piscina</label>
-                                </div>
-                                
-                                <div class="preferencia-opcoes">
-                                    <input type="checkbox" name="opcoes" id="wifi">
-                                    <label for="wifi">Wifi</label>
-                                </div>
-                                
-                                <div class="preferencia-opcoes">
-                                    <input type="checkbox" name="opcoes" id="garagem">
-                                    <label for="garagem">Garagem</label>
-                                </div>
-                                
-                                <div class="preferencia-opcoes">
-                                    <input type="checkbox" name="opcoes" id="suite">
-                                    <label for="suite">Suite</label>
-                                </div>
+                            
+                            <div class="preferencia-opcoes">
+                                <input type="checkbox" name="opcoes" id="garagem">
+                                <label for="garagem">Garagem</label>
                             </div>
-                        <!-- </div> -->
-                        
-                        <span><button type="submit">Solicitar orçamento</button></span>
+                            
+                            <div class="preferencia-opcoes">
+                                <input type="checkbox" name="opcoes" id="suite">
+                                <label for="suite">Suite</label>
+                            </div>
+                        </div>
+                       <span><button type="submit">Solicitar orçamento</button></span>
                     </form>
                 </div>
             </div>
         </section>
         
-        <section>
+        <section id="ofertas">
             <div class="ofertas largura-maxima">
-                <h2>Ofertas</h2>
-                <h3>Com até 50% de desconto</h3>
+                <div id="titulo-ofertas">
+                    <h2>Ofertas</h2>
+                    <h3>Com até <strong>50%</strong> de desconto</h3>
+                </div>
                 <div class="img-ofertas">
                     <div class="primeira-img">
                         <img src="imagens/rio.jpg" alt="Rio de Janeiro">
@@ -124,46 +115,71 @@
                     </div>
 
                     <div class="demais-img">
-                        <img src="imagens/manaus.jpg" alt="Rio de Janeiro">
-                        <figcaption>Manaus</figcaption>
-                        <img src="imagens/niteroi.jpg" alt="Rio de Janeiro">
-                        <figcaption>Rio de Janeiro</figcaption>
-                        <img src="imagens/saopaulo.jpg" alt="São Paulo">
-                        <figcaption>São Paulo</figcaption>
-                        <img src="imagens/maranhao.jpg" alt="Maranhão">
-                        <figcaption>Maranhão</figcaption>
+                        <div class="foto-em-cima">
+                            <img src="imagens/manaus.jpg" alt="Rio de Janeiro">
+                            <figcaption class="manaus">Manaus</figcaption>
+                        
+                            <img src="imagens/niteroi.jpg" alt="Rio de Janeiro">
+                            <figcaption class="rio">Rio de Janeiro</figcaption>
+                        </div>
+                        
+                        
+                        <div class="fotos-em-baixo">
+                            <img src="imagens/saopaulo.jpg" alt="São Paulo">
+                            <figcaption class="sampa">São Paulo</figcaption>
+                            <img src="imagens/maranhao.jpg" alt="Maranhão">
+                            <figcaption class="maranhao">Maranhão</figcaption>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="anuncio largura-maxima">
-                <h2>Explore a Natureza</h2>
-                <h3>Viaje conosco e veja o melhor que anatureza tem a oferecer</h3>
-                <div class="anuncio-oferta">
-                    <img src="imagens/lencol.jpg" alt="Lençois maranhenses">
-                    <figcaption>Lençois maranhenses, Brasil</figcaption>
-                    <p>Ida e volta a partir de R$ 79,00</p>
-                    <img src="imagens/goias.jpg" alt="Lençois maranhenses">
-                    <figcaption>Cachoeira Santa Bárbara - Brasil</figcaption>
-                    <p>Ida e volta a partir de R$ 130,00</p>
-                </div>
-            </div>
-
         </section>
+
+            <section class="ofertas">
+                <div class="anuncio largura-maxima">
+                    <div id="titulo-ofertas">
+                        <h2>Explore a Natureza</h2>
+                        <h3>Viaje conosco e veja o melhor que anatureza tem a oferecer</h3>
+                    </div>
+                    
+                    <div class="anuncio-oferta">
+                        <div class="conteudo-1">
+                            <img src="imagens/lencol.jpg" alt="Lençois maranhenses">
+                            <div>
+                                <h3>Lençois maranhenses, Brasil</h3>
+                                <p>Ida e volta a partir de R$ 79,00</p>
+                            </div>
+                        </div>
+
+                        <div class="conteudo-2">
+                            <img src="imagens/goias.jpg" alt="Lençois maranhenses">
+                            <div>
+                                <h3>Cachoeira Santa Bárbara - Brasil</h3>
+                                <p>Ida e volta a partir de R$ 130,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
     </main>
     <footer>
-        <div>
-            <h3>Contatos</h3>
-            <p><img src="imagens/local.png" alt=""><span>Rio de Janeiro</span></p>
-            <p><img src="imagens/telefone.png" alt=""><span>Telefone: (21) 9999-9999</span></p>
-            <p><img src="imagens/email.png" alt=""><span>E-mail: contato@email.com</span></p>
-        </div>
-        <div>
-            <h3>Nossas redes sociais</h3>
-            <p><img src="imagens/fb.png" alt="Facebook"><span>Facebook</span></p>
-            <p><img src="imagens/ig.png" alt="Instagram"><span>@Instagram</span></p>
-            <p><img src="imagens/tt.png" alt="Twitter"><span>@witter</span></p>
-        </div>
+        <section class="largura-maxima">
+            <divl class="rodape">
+                <div class="contatos">
+                    <h3>Contatos</h3>
+                    <p><img src="imagens/local.png" alt=""><span>Rio de Janeiro</span></p>
+                    <p><img src="imagens/telefone.png" alt=""><span>Telefone: (21) 9999-9999</span></p>
+                    <p><img src="imagens/email.png" alt=""><span>E-mail: contato@email.com</span></p>
+                </div>
+                <div class="rede-social">
+                    <h3>Nossas redes sociais</h3>
+                    <p><img src="imagens/fb.png" alt="Facebook"><span>Facebook</span></p>
+                    <p><img src="imagens/ig.png" alt="Instagram"><span>@Instagram</span></p>
+                    <p><img src="imagens/tt.png" alt="Twitter"><span>@witter</span></p>
+                </div>
+            </divl>
+        </section>
     </footer>
 </body>
 </html>

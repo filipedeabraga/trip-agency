@@ -136,3 +136,153 @@ form > span > button {
   color: #fff;
 }
 /* ======================================= */
+
+/* ========= Conteudo ofertas ============ */
+#ofertas {
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+}
+#titulo-ofertas > h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#titulo-ofertas > h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.img-ofertas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 385px;
+}
+.primeira-img {
+  width: 100%;
+  position: relative;
+} 
+.primeira-img > img{
+  width: 500px ;
+}
+.primeira-img > figcaption {
+  position:absolute;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.50);
+  width: 500px;
+  bottom: 10px;
+  left: 0px;
+  padding: 10px;
+}
+
+.demais-img {
+  width: 100%; 
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.demais-img > div {
+  position:relative;
+  width: 100%;
+}
+.demais-img > div > img {
+  width: calc(1024px / 4); 
+  height: 190px; 
+  padding: 0 0 10px 10px;
+}
+
+figcaption.manaus, .rio, .sampa, .maranhao {
+  position:absolute;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.417);
+  width: 246px;
+  bottom: 210px;
+  left: 10px;
+  padding: 5px;
+  font-size: 17px;
+}
+.sampa {
+  bottom: 210px;
+}
+.rio {
+  bottom: 15px;
+}
+.maranhao {
+  bottom:15px;
+}
+
+.anuncio-oferta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.conteudo-1, .conteudo-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.conteudo-1 > img, .conteudo-2 > img {
+  width: calc(100% - 10px);
+  height: 100%;
+  margin: 0 5px;
+}
+.conteudo-1 > div, .conteudo-2 > div{
+  width: 100%;
+  padding: 20px;
+}
+.conteudo-1 > div > h3, .conteudo-2 > div > h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.conteudo-1 > div > p, .conteudo-2 > div > p  {
+  font-size: 16px;
+  margin-top: 15px;
+  color: rgb(86, 86, 86);
+}
+/* ======================================= */
+
+/* ========= RODAPÉ ====================== */
+footer{
+  width: 100%;
+  background-color: var(--cor-paragrafo-topo);
+  margin-top: 32px;
+  color: #fff;
+}
+.rodape {
+  display: flex;
+  justify-content: space-between;
+}
+.contatos > p > img, .rede-social > p > img {
+  width: 18px;
+}
+.contatos, .rede-social {
+  display: flex;
+  flex-direction: column; 
+  margin: 25px 0;
+}
+.contatos > h3, .rede-social > h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.contatos > p, .rede-social > p {
+  margin: 5px 0;
+}
+.contatos > p > span, .rede-social > p > span {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* ====================================== */
+
+/* ===== Media Queries ================= */
+@media (max-width:768px){
+  form > span > button {
+    width: 100%;
+  }
+}
+
+/* ====================================== */
