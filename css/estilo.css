@@ -26,8 +26,8 @@ header {
 }
 .largura-maxima {
   min-width: 320px;
-  max-width: 100%;
-  width: 1024px;
+  max-width: 1024px;
+  width: 100%px;
   height: auto;
   margin: auto;  
 }
@@ -136,3 +136,204 @@ form > span > button {
   color: #fff;
 }
 /* ======================================= */
+
+/* ========= Conteudo ofertas ============ */
+.ofertas-area, .natureza-area {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 32px auto 0 auto;
+}
+.ofertas-area > h2, .natureza-area > h2 {
+  font-size: 18px;
+}
+.ofertas-area > h3, .natureza-area > h3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.ofertas-imagens {
+  width: 100%;
+  height: 375px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.oferta-imagem-destaque {
+  position: relative;
+  width: calc(50% - 10px);
+  height: 100%;
+}
+
+.oferta-quatro-imagens {
+  width: calc(50% - 10px);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.oferta-quatro-imagens > figure {
+  position: relative;
+  width: calc(50% - 10px);
+  height: auto;
+  margin: 0 6px;
+}
+
+.oferta-imagem-destaque > img, .oferta-quatro-imagens > figure > img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.oferta-imagem-destaque > figcaption, .oferta-quatro-imagens > figure > figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  background: rgb(0, 0, 0, .5);
+  font-size: 17px;
+  color: #fff;
+
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.natureza-area > h2 {
+  font-size: 18px;
+}
+.natureza-area > h3, .natureza-imagem > div > h3  {
+  font-size: 16px;
+}
+.natureza-imagem > div > p {
+  font-size: 14px;
+}
+.natureza-duas-imagens {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.natureza-imagem {
+  width: calc(50% - 10px);
+  height: 100%;
+}
+.natureza-imagem > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.natureza-imagem > div {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+.natureza-imagem > p {
+  color: gray;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+
+
+/* ======================================= */
+
+/* ========= RODAPÉ ====================== */
+footer{
+  width: 100%;
+  background-color: var(--cor-paragrafo-topo);
+  margin-top: 30px;
+  color: #fff;
+}
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.rodape-conteudo {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+.rodape-conteudo > h2{
+  color:#fff;
+  margin-left:15px ;
+  font-size: 18px;
+}
+.rodape-conteudo > div {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.rodape-conteudo > div > img{
+  width: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.rodape-conteudo > div > span {
+  columns: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+}
+/* ====================================== */
+
+
+
+
+/* ===== Media Queries ================= */
+@media (max-width:1100px) {
+  .largura-maxima{
+    width: 90%;
+ }
+}
+
+@media (max-width:768px) {
+  form > span > button {
+    width: 100%;
+  }
+  .ofertas-imagens {
+    height: 100%;
+    flex-direction: column;
+  }
+  .oferta-imagem-destaque, .oferta-quatro-imagens figure{
+    width: 100%;
+    height: 225px;
+    margin: 15px 0 0 0;
+   }
+   .oferta-quatro-imagens > figure {
+  
+   }
+
+  .natureza-duas-imagens {
+    flex-direction: column;
+  }
+
+  .natureza-imagem {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .rodape{
+    flex-direction: column;
+    align-items: center;
+  }
+  .rodape-conteudo {
+    width: 250px;
+  }
+  footer {
+    margin-top: 65px;
+  }
+}
+
+@media (max-width:540px){
+  div.ida-volta, .quarto-hospedagem {
+    flex-direction: column;
+  }
+  .data-ida, .data-volta {
+    width: 100%;
+  }
+}
+
+/* ====================================== */
