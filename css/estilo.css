@@ -138,7 +138,7 @@ form > span > button {
 /* ======================================= */
 
 /* ========= Conteudo ofertas ============ */
-<<<<<<< HEAD
+
 .ofertas-area, .natureza-area {
   width: 100%;
   height: auto;
@@ -238,9 +238,6 @@ form > span > button {
   margin-top: 15px;
 }
 
-
-
-=======
 #ofertas {
   width: 100%;
   margin: 32px auto 0 auto;
@@ -346,24 +343,19 @@ figcaption.manaus, .rio, .sampa, .maranhao {
   margin-top: 15px;
   color: rgb(86, 86, 86);
 }
->>>>>>> a35616b73f310728d39174695148e6c409027021
+
 /* ======================================= */
 
 /* ========= RODAPÉ ====================== */
 footer{
   width: 100%;
   background-color: var(--cor-paragrafo-topo);
-<<<<<<< HEAD
-  margin-top: 30px;
-=======
   margin-top: 32px;
->>>>>>> a35616b73f310728d39174695148e6c409027021
   color: #fff;
 }
 .rodape {
   display: flex;
   justify-content: space-between;
-<<<<<<< HEAD
   margin: auto;
 }
 .rodape-conteudo {
@@ -411,16 +403,17 @@ footer{
     height: 100%;
     flex-direction: column;
   }
+
+  .oferta-quatro-imagens{
+    width: 100%;
+}
+
   .oferta-imagem-destaque, .oferta-quatro-imagens figure{
     width: 100%;
     height: 225px;
     margin: 15px 0 0 0;
    }
-   .oferta-quatro-imagens > figure {
-  
-   }
-
-  .natureza-duas-imagens {
+    .natureza-duas-imagens {
     flex-direction: column;
   }
 
@@ -447,36 +440,7 @@ footer{
   .data-ida, .data-volta {
     width: 100%;
   }
-=======
-}
-.contatos > p > img, .rede-social > p > img {
-  width: 18px;
-}
-.contatos, .rede-social {
-  display: flex;
-  flex-direction: column; 
-  margin: 25px 0;
-}
-.contatos > h3, .rede-social > h3 {
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-.contatos > p, .rede-social > p {
-  margin: 5px 0;
-}
-.contatos > p > span, .rede-social > p > span {
-  font-size: 16px;
-  margin-left: 10px;
-}
-
-/* ====================================== */
-
-/* ===== Media Queries ================= */
-@media (max-width:768px){
-  form > span > button {
-    width: 100%;
-  }
->>>>>>> a35616b73f310728d39174695148e6c409027021
+ 
 }
 
 /* ====================================== */
